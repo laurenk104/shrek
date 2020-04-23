@@ -1,0 +1,67 @@
+/*
+  Name: Lauren Krieger
+  Date: April 17, 2020
+  Section: CSE 154 AJ
+  This is the styles.css page that adjusts the page layout and look.
+*/
+
+main {
+  justify-content: center;
+  height: 70vh;
+  margin: 10px;
+}
+
+#shrek {
+  position: relative;
+}
+
+#real-shrek {
+  height: 100%;
+}
+
+.selected {
+  background-color: yellowgreen;
+}
+
+.hair-position {
+  position: absolute;
+  top: 0%;
+  left: 30%;
+  width: 30%;
+}
+
+.dress-position {
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  width: 100%;
+}
+
+#clothes > section {
+  justify-content: space-evenly;
+  align-items: center;
+  flex-shrink: 1;
+  height: 50%;
+}
+
+#clothes {
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 20px;
+  width: 70%;
+}
+
+#clothes img {
+  height: 70%;
+}
+
+main, #clothes > section {
+  flex-wrap: nowrap;
+}
+
+main, #clothes > section, #clothes {
+  display: flex;
+}
